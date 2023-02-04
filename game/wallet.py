@@ -7,8 +7,9 @@ class Wallet:
     def reset(self):
         for cur in self.resources:
             cur.reset();
-    def set_discount(self,val):
+    def research(self,val):
         self.discount_bonus=val;
+
     def Buy(self,building):
         return building.buy(self);
     def add(self, resourceName,amount):
