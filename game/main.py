@@ -57,9 +57,8 @@ game_state = {
     "clock":pygame.time.Clock(),
     "research_count":0,
 }
-game_state['wallet'].resources.append(resources[0])
-game_state['wallet'].resources.append(resources[1])
-game_state['wallet'].resources.append(resources[2])
+game_state['wallet'].resources.append(resources[0])#we only need the first one - the rest will get added via teh game
+#more can be appended here with there default value changed for testing
 while 1:
     game_state['clock'].tick(60)
     keypress = pygame.key.get_pressed()
